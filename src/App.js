@@ -48,7 +48,7 @@ class App extends Component
           <div className="container">
             <Header/>
                                                         {/* HOME PAGE ROUTER */}
-            <Route exact path="To-Do-App/" render={props=>(
+            <Route exact path="/" render={props=>(
                 <React.Fragment>
                     <AddToDo addTodo={this.addTodo} />
                     <Todos todos={this.state.todos} markComplete={this.markComplete} delTodo={this.delTodo}/>
@@ -56,7 +56,7 @@ class App extends Component
                 )} 
             />
                                                         {/* ABOUT ROUTER */}
-            <Route path="To-Do-App/about" component={About}/>
+            <Route path="/about" component={About}/>
           </div>
         </div>  
       </Router>
